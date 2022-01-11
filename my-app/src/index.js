@@ -1,9 +1,9 @@
-
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "../src/routes/App";
-
-
+import * as bootstrap from "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../src/styles/main.scss";
 ReactDOM.render(
   <React.StrictMode>
     <App />
