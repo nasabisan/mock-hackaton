@@ -37,7 +37,21 @@ const Login= ()=> {
 
     return (
         <div>
-        <h1>Login</h1>
+      {/* <form className="form">
+      <input type="email" placeholder="Email" onChange={handleEmail} />
+      <input type="password" placeholder="Password" onChange={handlePassword} />
+      
+      <button
+        {...attrs}
+        className="primary-button"
+        onClick={(e) => {
+          e.preventDefault();
+          handleSubmit(email, password);
+        }}
+      >
+        Login
+      </button>
+    </form> */}
         </div>
     )
 }

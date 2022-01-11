@@ -4,7 +4,7 @@ import Login from "../components/Login";
 import ContentArea from "../components/ContentArea";
 import AddCategory from "../components/AddCategory";
 import Categories from "../components/Categories";
-
+import Header from "../components/Header";
 const App = () => {
   return (
     <div className="App">
@@ -14,6 +14,7 @@ const App = () => {
           <Route exact path="/" element={<ContentArea />} />
           <Route exact path="/Categories" element={<Categories />} />
           <Route exact path="/AddCategories" element={<AddCategory />} />
+          <Route exact path="/Header" element={<Header />} />
         </Routes>
       </Router>
     </div>
