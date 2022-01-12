@@ -1,2 +1,3 @@
 @import "../components/footer.css";
-@import "../components/categories.css";
+@import "../components/Categories/categories.css";
+@import "../components/HomePage/homePage.css";
