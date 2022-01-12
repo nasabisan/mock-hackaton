@@ -6,6 +6,7 @@ import AddCategory from "../components/AddCategory";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import HomePage from "../components/HomePage";
+import Promotions from "../components/Promotions";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route exact path="/Footer" element={<Footer />} />
           <Route exact path="/Categories" element={<Categories />} />
           <Route exact path="/AddCategory" element={<AddCategory />} />
+          <Route exact path="/Promotions" element={<Promotions />} />
         </Routes>
       </Router>
     </div>
