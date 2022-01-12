@@ -14,11 +14,6 @@ const Categories = () => {
                 </div>
                 
             </section>
-            {/* {
-                   for(let i=0; i==5;i++){
-                    console.log('hola')
-                   }
-               } */}
             <h1>Categories</h1>
         </div>
     )
