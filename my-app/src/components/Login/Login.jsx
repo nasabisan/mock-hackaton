@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import SweetAlert from "sweetalert2";
-import { login, auth } from "../lib/firebase";
+import { login, auth } from "../../lib/firebase";
+import logo from "../../assets/LogoTotallok.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -39,23 +40,33 @@ const Login = () => {
 
   return (
     <div>
+      <div className="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+          <img src={logo} alt="logo-banner" className="img-logo"></img>
+          </div>
+      </nav>
+    </div>
+
+      <p>SIGN IN</p>
       <form className="form">
-        <input type="email" placeholder="Email" onChange={handleEmail} />
+        <input type="email" className="email" placeholder="Email" onChange={handleEmail} />
         <input
-          type="password"
+          type="password" className="password"
           placeholder="Password"
           onChange={handlePassword}
         />
 
-        <button
+        <button className="button"
           onClick={(e) => {
             e.preventDefault();
             handleSubmit(email, password);
           }}
         >
-          Login
+          LOGIN
         </button>
       </form>
+      <footer> 2022 TOTAL LOOK all rights reserved.</footer>
     </div>
   );
 };
