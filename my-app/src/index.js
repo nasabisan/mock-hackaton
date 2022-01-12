@@ -4,7 +4,7 @@ import App from "../src/routes/App";
 //import * as bootstrap from "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../src/styles/main.css";
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+// import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 ReactDOM.render(
   <React.StrictMode>
     <App />
