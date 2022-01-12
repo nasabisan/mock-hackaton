@@ -4,14 +4,17 @@ import logo from "../../assets/LogoTotallok.png";
 import { useNavigate } from "react-router-dom";
 const Header =()=> {
   const navigate = useNavigate();
+  const handleHome = () => {
+    navigate("/");
+  };
   const handleLogin = () => {
     navigate("/Login");
   };
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-white  py-3 shadow-sm">
-        <div class="container">
-          <img src={logo} alt="logo-banner" className="img-logo"></img>
+        <div class="container" >
+          <img src={logo} alt="logo-banner" className="img-logo"  onClick={handleHome}></img>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
