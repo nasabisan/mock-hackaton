@@ -1,24 +1,23 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import SweetAlert from "sweetalert2";
 import { login, auth } from "../../lib/firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Header from "../Header/Header";
-
+import Footer from "../Footer";
 
 const Login = () => {
-
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-    if (user) {
-    navigate("/AllCategories"); 
-    // } else {
-    // navigate("/");
-     }
+      if (user) {
+        navigate("/AllCategories");
+        // } else {
+        // navigate("/");
+      }
     });
     // eslint-disable-next-line
-    }, []); 
-  
+  }, []);
+
   const navigate = useNavigate();
   const [state, setState] = useState({});
   const handleEmail = (e) => setState({ ...state, email: e.target.value });
@@ -56,32 +55,34 @@ const Login = () => {
     <div>
       <Header />
 
-      <p>SIGN IN</p>
-      <form className="form">
-        <input
-          type="email"
-          className="email"
-          placeholder="Email"
-          onChange={handleEmail}
-        />
-        <input
-          type="password"
-          className="password"
-          placeholder="Password"
-          onChange={handlePassword}
-        />
+      <div className="container-home">
+        <p>SIGN IN</p>
+        <form className="form">
+          <input
+            type="email"
+            className="email"
+            placeholder="Email"
+            onChange={handleEmail}
+          />
+          <input
+            type="password"
+            className="password"
+            placeholder="Password"
+            onChange={handlePassword}
+          />
 
-        <button
-          className="button"
-          onClick={(e) => {
-            e.preventDefault();
-            handleSubmit(email, password);
-          }}
-        >
-          LOGIN
-        </button>
-      </form>
-      <footer> 2022 TOTAL LOOK all rights reserved.</footer>
+          <button
+            className="button"
+            onClick={(e) => {
+              e.preventDefault();
+              handleSubmit(email, password);
+            }}
+          >
+            LOGIN
+          </button>
+        </form>
+      </div>
+      <Footer />
     </div>
   );
 };

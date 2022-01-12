@@ -50,7 +50,7 @@ const HeaderAdministrator = () => {
         </div>
        
       </nav>
-      <section className="">Welcome {auth.currentUser.email} </section>
+      <section className="welcome">Welcome {auth.currentUser.email} </section>
     </div>
   );
 };

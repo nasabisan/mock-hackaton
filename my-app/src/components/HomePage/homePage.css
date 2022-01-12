@@ -1,9 +1,11 @@
 .categories{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
     /* background-color: black; */
 }
 .container-home{
-    height: 79vh;
+    height: 100vh;
 }
 
