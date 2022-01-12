@@ -1,10 +1,19 @@
 import React from 'react'
-import HeaderAdministrator from './Header/HeaderAdministrator'
+import img from '../assets/blusa.png'
 
-const Categories= ()=> {
+const Categories = () => {
+    const categories=["uno", "Dos", "Tres"];
     return (
         <div>
-        <HeaderAdministrator />
+
+            <section className='categories'>
+               
+                <div className='category-card'>
+                <img className='categories-image' alt='category image' src={img} />
+                <p className='category-title'>titulo categ  oria</p>
+                </div>
+                
+            </section>
             <h1>Categories</h1>
         </div>
     )
