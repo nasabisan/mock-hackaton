@@ -1,24 +1,18 @@
-
-import React, { useEffect, useState } from "react";
-
-import img from '../../assets/blusa.png'
-import categoryInteration from "./CategoryInteration";
+import React from "react";
 
 const AllCategories = (props) => {
+  let { category } = props;
 
-    let { category }= props;
-   
-//     const categories=["uno", "Dos", "Tres"];
-    return (
-        <div>
-<p>holo</p>
-                <div className='category-card'>
-                <img className='categories-image' alt='category image'  src={category.imagen}/>
-                <p className='category-title'>{category.description}</p>
-                </div>
-            
-        </div>
-    )
-}
+  //     const categories=["uno", "Dos", "Tres"];
+  return (
+    <div>
+      <p>holo</p>
+      <div className="category-card">
+        <img className="categories-image" src={category.imagen} alt="category" />
+        <p className="category-title">{category.description}</p>
+      </div>
+    </div>
+  );
+};
 
-export default AllCategories
+export default AllCategories;
