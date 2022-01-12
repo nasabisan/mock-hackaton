@@ -1,0 +1,6 @@
+.categories{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: black; */
+}
+
