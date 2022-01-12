@@ -31,8 +31,9 @@ const Login = () => {
           showConfirmButton: false,
           showCancelButton: true,
           cancelButtonText: "Ok",
-          cancelButtonColor: "#FF4848",
-          background: "#FAEEE0",
+          cancelButtonColor: "#000000",
+          background: "#FFFFFF",
+          border: "#000000",
         });
       }
     }
