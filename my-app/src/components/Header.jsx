@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/LogoTotallok.png";
-//import iconBag from "../assets/icons8-bolsa-de-compras-50.png";
+import iconBag from "../assets/icons8-bolsa-de-compras-50.png";
 
 function Header() {
   return (
