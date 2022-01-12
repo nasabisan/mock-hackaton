@@ -9,7 +9,7 @@ const Header =()=> {
   };
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white  py-3 shadow-sm">
         <div class="container">
           <img src={logo} alt="logo-banner" className="img-logo"></img>
 
@@ -28,10 +28,10 @@ const Header =()=> {
             </form>
             <div className="buttons ">
               <section onClick={handleLogin} className="btn btn-outline-dark">
-                <i className="fa fa-sign-in"></i>Login
+                <i className="fa fa-sign-in me-1"></i>Login
               </section>
               <section className="btn btn-outline-dark ms-2">
-                <i className="fas fa-shopping-bag"></i>Bag
+              <i className="fa fa-shopping-bag me-1"></i>
               </section>
             </div>
           </div>

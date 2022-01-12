@@ -18,7 +18,7 @@ const HeaderAdministrator = () => {
   };
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
         <div class="container">
           <img src={logo} alt="logo-banner" className="img-logo"></img>
 
@@ -36,11 +36,11 @@ const HeaderAdministrator = () => {
             </form>
             <div className="buttons ">
               <section onClick={handleLogout} className="btn btn-outline-dark">
-                <i class="fas fa-sign-out-alt"></i>sign-out
+                <i className="fa-solid fa-right-from-bracket me-1"></i>Sign-out
               </section>
               {error && <div className="error">{error}</div>}
               <section className="btn btn-outline-dark ms-2">
-                <i className="fas fa-shopping-bag"></i>Bag
+                <i className="fa fa-shopping-bag me-1"></i>
               </section>
             </div>
           </div>
