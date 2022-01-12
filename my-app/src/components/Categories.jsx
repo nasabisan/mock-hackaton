@@ -1,22 +1,21 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import HeaderAdministrator from "./Header/HeaderAdministrator";
-import iconBack from "../assets/iconBack.png";
-const AddCategory = () => {
+import iconAdd from "../assets/iconAdd.png";
+const Categories = () => {
   const navigate = useNavigate();
-  const handleBackCategories = () => {
-    navigate("/Categories");
+  const handleCategories = () => {
+    navigate("/AddCategory");
   };
-
   return (
     <div>
       <HeaderAdministrator />
       <>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-item" onClick={handleBackCategories}>
+          <li className="nav-item" onClick={handleCategories}>
             <section className="nav-link">
-              <img src={iconBack} alt="icon-back" className="icon-navBar"></img>
-              Back to categories list
+              <img src={iconAdd} alt="icon-next" className="icon-navBar"></img>
+              Add new Categories
             </section>
           </li>
         </ul>
@@ -25,4 +24,4 @@ const AddCategory = () => {
   );
 };
 
-export default AddCategory;
+export default Categories;
