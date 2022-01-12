@@ -1,0 +1,21 @@
+h1 {
+  margin: 1rem 0rem 0rem 1rem;
+  font-size: 20px;
+}
+
+.promotion-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0rem 0rem 0rem;
+  margin-top: 2rem;
+  width: 90%;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.promotion-img {
+  margin: 0.5rem;
+  width: 65%;
+  height: 15%;
+}
