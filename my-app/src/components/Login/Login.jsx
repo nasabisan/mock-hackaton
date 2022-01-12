@@ -3,7 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import SweetAlert from "sweetalert2";
 import { login, auth } from "../../lib/firebase";
-import logo from "../../assets/LogoTotallok.png";
+import Header from "../Header/Header";
+
 
 const Login = () => {
   const navigate = useNavigate();
@@ -17,11 +18,11 @@ const Login = () => {
   const handleSubmit = async (email, password) => {
     const user = auth.currentUser;
     if (user) {
-      navigate("/Categories");
+      navigate("/AllCategories");
     } else {
       try {
         await login(email, password);
-        navigate("/Categories");
+        navigate("/AllCategories");
       } catch (error) {
         console.error(error);
         new SweetAlert({
@@ -41,24 +42,25 @@ const Login = () => {
 
   return (
     <div>
-      <div className="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-        <div class="container">
-          <img src={logo} alt="logo-banner" className="img-logo"></img>
-          </div>
-      </nav>
-    </div>
+      <Header />
 
       <p>SIGN IN</p>
       <form className="form">
-        <input type="email" className="email" placeholder="Email" onChange={handleEmail} />
         <input
-          type="password" className="password"
+          type="email"
+          className="email"
+          placeholder="Email"
+          onChange={handleEmail}
+        />
+        <input
+          type="password"
+          className="password"
           placeholder="Password"
           onChange={handlePassword}
         />
 
-        <button className="button"
+        <button
+          className="button"
           onClick={(e) => {
             e.preventDefault();
             handleSubmit(email, password);

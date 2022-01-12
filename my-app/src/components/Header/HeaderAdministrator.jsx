@@ -42,10 +42,14 @@ const HeaderAdministrator = () => {
               <section className="btn btn-outline-dark ms-2">
                 <i className="fa fa-shopping-bag me-1"></i>
               </section>
+              
             </div>
           </div>
+          
         </div>
+       
       </nav>
+      <section>Welcome email </section>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import iconBack from "../assets/iconBack.png";
 const AddCategory = () => {
   const navigate = useNavigate();
   const handleBackCategories = () => {
-    navigate("/Categories");
+    navigate("/AllCategories");
   };
 
   return (

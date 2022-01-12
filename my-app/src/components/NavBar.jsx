@@ -4,7 +4,7 @@ import iconNext from "../assets/iconNext.png";
 const NavBar = () => {
   const navigate = useNavigate();
   const handleCategories = () => {
-    navigate("/Categories");
+    navigate("/Promotions");
   };
   return (
     <div>
