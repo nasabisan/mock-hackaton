@@ -1,15 +1,14 @@
-import React from 'react'
-import Header from './Header'
-import NavBar from './NavBar'
+import React from "react";
+import Header from "./Header/Header";
+import NavBar from "./NavBar";
 
+const HomePage = () => {
+  return (
+    <div>
+      <Header />
+      <NavBar />
+    </div>
+  );
+};
 
-function ContentArea() {
-    return (
-        <div>
-            <Header />
-            <NavBar />
-        </div>
-    )
-}
-
-export default ContentArea
+export default HomePage;

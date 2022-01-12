@@ -1,8 +1,12 @@
 import React from "react";
-import logo from "../assets/LogoTotallok.png";
+import logo from "../../assets/LogoTotallok.png";
 //import iconBag from "../assets/icons8-bolsa-de-compras-50.png";
-
-function Header() {
+import { useNavigate } from "react-router-dom";
+const Header =()=> {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/Login");
+  };
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -10,13 +14,7 @@ function Header() {
           <img src={logo} alt="logo-banner" className="img-logo"></img>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-            </ul>
+        
             <form class="d-flex mx-auto">
               <input
                 class="form-control me-2"
@@ -29,12 +27,12 @@ function Header() {
               </button>
             </form>
             <div className="buttons ">
-              <a href="/" className="btn btn-outline-dark">
+              <section onClick={handleLogin} className="btn btn-outline-dark">
                 <i className="fa fa-sign-in"></i>Login
-              </a>
-              <a href="/" className="btn btn-outline-dark ms-2">
+              </section>
+              <section className="btn btn-outline-dark ms-2">
                 <i className="fas fa-shopping-bag"></i>Bag
-              </a>
+              </section>
             </div>
           </div>
         </div>
