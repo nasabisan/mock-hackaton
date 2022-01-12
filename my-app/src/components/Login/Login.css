@@ -51,11 +51,3 @@ p {
     font-size: 20px;
     cursor:pointer;
 }
-footer {
-    text-align: center;
-    align-items: flex-end;
-    height: 5%;
-    background-color: black;
-    color: white;
-    margin-top: 203px;
-}

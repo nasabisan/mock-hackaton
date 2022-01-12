@@ -3,4 +3,29 @@ margin-top: 50px;
 }
 .img-logo{
     cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+ 
+}
+.logotipo{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.icon-navBar{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.nav-link{
+    margin-left: 14vw;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto'; 
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #251B1B;
 }
