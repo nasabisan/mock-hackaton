@@ -1,10 +1,13 @@
 import React from 'react'
+import Header from './Header'
+import NavBar from './NavBar'
 
 
 function ContentArea() {
     return (
         <div>
-            <h1>ContentArea</h1>
+            <Header />
+            <NavBar />
         </div>
     )
 }
