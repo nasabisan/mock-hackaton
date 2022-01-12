@@ -1,9 +1,12 @@
-
-.icon-navBar{
+/* .icon-navBar {
   height: 30px;
   width: 30px;
   margin-right: 5px;
 }
-.nav-item{
+.nav-item {
   cursor: pointer;
+} */
+
+.App {
+  height: 100%;
 }

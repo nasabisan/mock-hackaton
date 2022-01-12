@@ -6,8 +6,8 @@ import AddCategory from "../components/AddCategory";
 
 import Footer from "../components/Footer";
 import Promotions from "../components/Promotions";
-import HomePage from '../components/HomePage/HomePage';
-import AllCategories from '../components/Categories/AllCategories';
+import HomePage from "../components/HomePage/HomePage";
+import AllCategories from "../components/Categories/AllCategories";
 
 const App = () => {
   return (
@@ -22,6 +22,7 @@ const App = () => {
           <Route exact path="/Promotions" element={<Promotions />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 };
