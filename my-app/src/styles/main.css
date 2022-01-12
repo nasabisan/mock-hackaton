@@ -7,3 +7,5 @@
 
 @import "../App.css";
 @import "../../src/components/Header/header.css";
+
+@import "../components/promotions.css";
