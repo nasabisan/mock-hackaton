@@ -1,5 +1,6 @@
-import React from 'react'
-import logo from "../assets/Agregar un subtítulo.png";
+import React from "react";
+import logo from "../assets/LogoTotallok.png";
+//import iconBag from "../assets/icons8-bolsa-de-compras-50.png";
 
 function Header() {
   return (
@@ -9,6 +10,13 @@ function Header() {
           <img src={logo} alt="logo-banner" className="img-logo"></img>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">
+                  Home
+                </a>
+              </li>
+            </ul>
             <form class="d-flex mx-auto">
               <input
                 class="form-control me-2"
@@ -20,24 +28,12 @@ function Header() {
                 Search
               </button>
             </form>
-            <ul class="navbar-nav  mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/">
-                  See all promotions
-                </a>
-              </li>
-            </ul>
             <div className="buttons ">
               <a href="/" className="btn btn-outline-dark">
                 <i className="fa fa-sign-in"></i>Login
               </a>
               <a href="/" className="btn btn-outline-dark ms-2">
-                <i class="fa fa-shopping-cart me-1"></i>Cart (0)
+                <i className="fas fa-shopping-bag"></i>Bag
               </a>
             </div>
           </div>
@@ -47,4 +43,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;
