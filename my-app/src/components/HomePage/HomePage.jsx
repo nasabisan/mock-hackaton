@@ -34,6 +34,7 @@ const HomePage = () => {
       {db && <CategoriesHome categoriesData={db} />}
 
       {/* {db && <CategoryInteration categories={db}/> }  */}
+      
     </div>
   );
 };
