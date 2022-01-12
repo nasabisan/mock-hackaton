@@ -3,6 +3,7 @@ import { helpHttp } from "../../helpers/helpHttp.js";
 import Header from "../Header/Header";
 import NavBar from "../NavBar";
 import CategoriesHome from "../Categories/CategoriesHome.jsx";
+import Footer from "../Footer.jsx";
 
 const HomePage = () => {
   const [db, setDbCategory] = useState(null);
@@ -26,16 +27,19 @@ const HomePage = () => {
   }, [url]);
 
   return (
-    <div>
+    <>
       <Header />
-      <p>home</p>
-      <NavBar />
 
-      {db && <CategoriesHome categoriesData={db} />}
+      <div className="container-home">
+        <NavBar />
 
-      {/* {db && <CategoryInteration categories={db}/> }  */}
-      
-    </div>
+        {db && <CategoriesHome categoriesData={db} />}
+
+        {/* {db && <CategoryInteration categories={db}/> }  */}
+        {/* <footer> 2022 TOTAL LOOK all rights reserved.</footer> */}
+      </div>
+      <Footer />
+    </>
   );
 };
 

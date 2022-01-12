@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { logout, auth } from "../../lib/firebase";
 import logo from "../../assets/LogoTotallok.png";
 const HeaderAdministrator = () => {
+  console.log("user", auth.currentUser.email);
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleLogout = async () => {
@@ -49,7 +50,7 @@ const HeaderAdministrator = () => {
         </div>
        
       </nav>
-      <section>Welcome email </section>
+      <section className="">Welcome {auth.currentUser.email} </section>
     </div>
   );
 };

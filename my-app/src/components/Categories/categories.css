@@ -7,7 +7,7 @@
 .category-card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .category-title{
@@ -45,4 +45,21 @@
     align-items: center;
     justify-content: center;
     
+}
+
+.input-categories {
+    display: flex;
+    width: 50%;
+    border-color: rgba(90, 90, 90, 1);
+    font-size: 20px;
+    text-indent: 16px;
+}
+textarea {
+    display: flex;
+    margin-top: 3rem;
+    width: 50%;
+    height: 200px;
+    border-color: rgba(90, 90, 90, 1);
+    font-size: 20px;
+    text-indent: 16px;
 }

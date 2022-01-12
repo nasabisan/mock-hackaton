@@ -1,18 +1,18 @@
 import React from "react";
-import Categories from "./AllCategories";
-
-
 export const categoryInteration = (props) => {
   const { categories } = props;
-
   return (
     <>
       {categories.length > 0 ? (
         categories.map((cat) => (
-          <Categories
-            key={cat.id}
-            category={cat}  
-          />
+          // <Categories
+          //   key={cat.id}
+          //   category={cat}  
+          // />
+          <div key={cat.id} className="category-card">
+          <img className="categories-image" src={cat.imagen} alt="category" />
+          <p className="category-title">{cat.description}</p>
+        </div>
         ))
       ) : (
         <div className= "msg-empty">
@@ -22,5 +22,4 @@ export const categoryInteration = (props) => {
     </>
   );
 };
-
 export default categoryInteration

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "../components/Login/Login";
 
-import AddCategory from "../components/AddCategory";
+import AddCategory from "../components/Categories/AddCategory";
 
 import Footer from "../components/Footer";
 import Promotions from "../components/Promotions";

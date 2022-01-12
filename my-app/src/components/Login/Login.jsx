@@ -1,12 +1,24 @@
-import React from "react";
-import { useState } from "react";
+import React, {useEffect, useState} from "react";
 import { useNavigate } from "react-router";
 import SweetAlert from "sweetalert2";
 import { login, auth } from "../../lib/firebase";
+import { onAuthStateChanged } from "firebase/auth";
 import Header from "../Header/Header";
 
 
 const Login = () => {
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+    if (user) {
+    navigate("/AllCategories"); 
+    // } else {
+    // navigate("/");
+     }
+    });
+    // eslint-disable-next-line
+    }, []); 
+  
   const navigate = useNavigate();
   const [state, setState] = useState({});
   const handleEmail = (e) => setState({ ...state, email: e.target.value });
