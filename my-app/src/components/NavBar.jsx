@@ -12,7 +12,7 @@ const NavBar = () => {
         <li className="nav-item" onClick={handleCategories}>
           <section className="nav-link">
             <img src={iconNext} alt="icon-next" className="icon-navBar"></img>
-            See all Categories
+            See all promotions
           </section>
         </li>
       </ul>
